@@ -1,2 +1,3 @@
-# plot-statistical-distributions
-this repo contains code to generate common statistical distributions for educational purposes
+# Plot common statistical distributions
+### This repo contains code to generate common statistical distributions for educational purposes
+

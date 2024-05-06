@@ -104,6 +104,6 @@ norm_dist <- rnorm(n = n, mean = m, sd = sd)
 # plot 
 plot_norm_dist(norm_dist = norm_dist, annotations = T)
 
-# for saving plot (.png extension)
-plot_norm_dist(norm_dist = norm_dist, annotations = T,
-               save.plot = TRUE, file.name = "plots/normal_distribution.png")
+# # for saving plot (.png extension)
+# plot_norm_dist(norm_dist = norm_dist, annotations = T,
+#                save.plot = TRUE, file.name = "plots/normal_distribution.png")

@@ -3,4 +3,4 @@
 
 |Distribution|Rscript|image|
 |---|---|---|
-|Normal Distribution|[normal_distribution.R](R/normal_distribution.R)|[normal_distribution.png](plots/normal_distribution.png)|
+|Normal Distribution|[normal_distribution.R](R/normal_distribution.R)|![normal distribution with empirical rule annotations](plots/normal_distribution.png)|

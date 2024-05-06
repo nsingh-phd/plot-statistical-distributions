@@ -49,3 +49,9 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+# pixi environments
+.pixi
+*.egg-info
+
+# jupyter
+.ipynb_checkpoints

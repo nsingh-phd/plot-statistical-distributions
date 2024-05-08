@@ -9,6 +9,7 @@
 # User-specific files
 .Ruserdata
 .DS_Store
+_playgRound_.R
 
 # Example code in package build process
 *-Ex.R

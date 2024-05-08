@@ -8,7 +8,7 @@
 ###
 # function to plot normal distribution density curve
 ###
-plot_norm_dist <- function(norm_dist,
+plot_norm_dist <- function(m = 0, sd = 1, n = 1e6,
                            title = "Empirical Rule", 
                            subtitle = "(Normal distribution)",
                            title.cex = 2, title.font = 4,
@@ -19,6 +19,10 @@ plot_norm_dist <- function(norm_dist,
                            save.plot = FALSE) {
    #' This function plots the normal distribution density curve with 
    #' empirical rule annotations
+   
+   # simulate sampling from normal distribution
+   set.seed(1)
+   norm_dist <- rnorm(n = n, mean = m, sd = sd)
    
    # kernel density estimation
    kde <- density(norm_dist)
@@ -86,31 +90,16 @@ plot_norm_dist <- function(norm_dist,
    if (save.plot) dev.off()
 }
 
-###
-# simulate and plot normal distribution
-###
-
-# set mean and sd
-m = 0
-sd = 1
-
-# number of random samples
-n = 1e6
-
-# simulate sampling from normal distribution
-set.seed(1)
-norm_dist <- rnorm(n = n, mean = m, sd = sd)
-
-# plot 
-plot_norm_dist(norm_dist = norm_dist, 
+# plot distribution
+plot_norm_dist(m = 0, sd = 1, 
                title = "Normal Distribution", 
                subtitle = "(Empirical Rule)",
                annotations = T)
 
-# for saving plot (.png extension)
-plot_norm_dist(norm_dist = norm_dist, 
-               title = "Normal Distribution", 
-               subtitle = "(Empirical Rule)",
-               annotations = T,
-               save.plot = TRUE, 
-               file.name = "plots/normal_distribution.png")
+# # for saving plot (.png extension)
+# plot_norm_dist(m = 0, sd = 1,
+#                title = "Normal Distribution",
+#                subtitle = "(Empirical Rule)",
+#                annotations = T,
+#                save.plot = TRUE,
+#                file.name = "plots/normal_distribution.png")

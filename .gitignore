@@ -10,6 +10,7 @@
 .Ruserdata
 .DS_Store
 **/_playground_*
+.idea
 
 # Example code in package build process
 *-Ex.R
